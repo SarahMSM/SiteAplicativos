@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_link {
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px;
+    width: 140 px;
+    display: inline-flex; /* Alinha imagem e texto */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaço entre imagem e texto */
+    padding: 10px 20px;
+    color: black;
+    transition: background-color 0.3s;
+    flex-direction: column; /* Coloca a imagem acima do texto */
+}
+
+.btn_link img {
+  width: 100px; /* Ajuste o tamanho da imagem */
+  height: 100px;
+}
+
+.btn_link:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.lista_limpa {
+    display: flex;
+    gap: 20px; /* Espaço entre os itens da lista */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
