@@ -35,7 +35,7 @@ function dragElement(elmnt) {
     pos4 = e.clientY;
     // set the element's new position:
     let newTop = elmnt.offsetTop - pos2;
-let newLeft = elmnt.offsetLeft - pos1;
+    let newLeft = elmnt.offsetLeft - pos1;
 
 
 const maxTop = window.innerHeight - elmnt.offsetHeight;

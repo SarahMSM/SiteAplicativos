@@ -8,6 +8,7 @@
     src: url(./fonts/ubuntu/Ubuntu-Regular.ttf) format('truetype');
 }
 p {
+    color: #fff6d3;
     font-family: 'Ubuntu';
 }
 
@@ -22,7 +23,7 @@ p {
     gap: 20px; /* Espaço entre os parágrafos */
     padding: 50px;
     background: linear-gradient(to right, #808080, #808080 92%) top / 100% 30px no-repeat,
-    linear-gradient(to right, #b892bd, rgb(247, 189, 189), rgb(228, 207, 167)); /* Gradiente de fundo da caixa */
+    linear-gradient(to right, #b892bd, rgb(247, 189, 189), rgb(227, 200, 149)); /* Gradiente de fundo da caixa */
     border-radius: 10px; /* Bordas arredondadas */
     border-style: solid;
     border-width: 1px;
@@ -30,12 +31,25 @@ p {
     width: 1000px; /* Largura da caixa */
     box-shadow: 5px 5px 20px #808080;
 }
-
-.titulo {
-    color: aliceblue;
+.titulo-index{
+    font-size: 19px;
+    color:#fff6d3;
+}
+h3 {
+    color: #eb6b6f;
     font-size: 40px;
     font-family: 'Ubuntu';
     text-shadow: #8a5490 0px 0px 10px ;
+}
+h4, h5 {
+    color: #eb6b6f;
+    font-size: auto;
+    font-family: 'Ubuntu';
+}
+ol, ul, table {
+    color: #fff6d3;
+    font-size: auto;
+    font-family: 'Ubuntu';
 }
 * {
     margin: 0;
@@ -43,15 +57,17 @@ p {
     box-sizing: border-box;
 }
 .corpo_padrao {
-    background-image: linear-gradient(to bottom, white, rgb(234, 187, 234));
+    padding-top: 18%;
+    padding-bottom: 15%;
+    background-image: linear-gradient(to bottom, rgb(215, 216, 252), #7c3f58);
+    background-repeat: no-repeat;
     margin: auto;
     width: 70vw;
-    height: 230vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px; /* Espaço para o menu fixo */
 } 
 
 body {
@@ -63,6 +79,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color:rgb(215, 216, 252);
+    padding-top: 10%;
+    img { margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 40vw;}
 } 
 
 .menu_btn {
@@ -74,8 +95,7 @@ body {
     gap: 10px; /* Espaço entre imagem e texto */
     padding: 10px 20px;
     color: black;
-    transition: transform 0.2s ease, background-color 0.3s; /* Transição suave para transformações e 
-    mudanças de cor */
+    transition: transform 0.2s ease, background-color 0.3s; 
     flex-direction: column; /* Coloca a imagem acima do texto */
 }
 
@@ -86,6 +106,9 @@ body {
 
 .menu_btn:hover {
     transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+    .opcao-imagem{ transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 50px rgb(71, 38, 71); }
+    
 }
 
 .lista_limpa {
@@ -136,8 +159,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Espaço entre os parágrafos */
-    padding: 20px;
+    gap: 10px; /* Espaço entre os parágrafos */
+    padding: 30px;
     background-color: #46425e; /* Cor de fundo da caixa */
     border-radius: 10px; /* Bordas arredondadas */
     width: 60%; /* Largura da caixa */
