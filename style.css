@@ -1,16 +1,68 @@
+@font-face {
+    font-family: 'Cascadia-Code';
+    src: url(./fonts/cascadia-code/CascadiaCode-Italic-VariableFont_wght.ttf) format('truetype');
+    src: url(./fonts/cascadia-code/CascadiaCode-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(./fonts/ubuntu/Ubuntu-Regular.ttf) format('truetype');
+}
+p {
+    font-family: 'Ubuntu';
+}
+
+.caixa-main{ /*opcoes do index*/
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 200px;
+    left: 250px;
+    align-items: center;
+    gap: 20px; /* Espaço entre os parágrafos */
+    padding: 50px;
+    background: linear-gradient(to right, #808080, #808080 92%) top / 100% 30px no-repeat,
+    linear-gradient(to right, #b892bd, rgb(247, 189, 189), rgb(228, 207, 167)); /* Gradiente de fundo da caixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    border-style: solid;
+    border-width: 1px;
+    border-color: aliceblue;
+    width: 1000px; /* Largura da caixa */
+    box-shadow: 5px 5px 20px #808080;
+}
+
+.titulo {
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Ubuntu';
+    text-shadow: #8a5490 0px 0px 10px ;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.corpo_padrao {
+    background-image: linear-gradient(to bottom, white, rgb(234, 187, 234));
+    margin: auto;
+    width: 70vw;
+    height: 230vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; /* Espaço para o menu fixo */
+} 
+
 body {
+    margin: auto;
     width: 70vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 500px; /* Espaço para o menu fixo */
+    background-color:rgb(215, 216, 252);
 } 
 
 .menu_btn {
@@ -45,10 +97,14 @@ body {
 }
 
 .menu_topo {
+    border-radius: 0px 0px 10px 10px; /*borda arredondada somente no campo inferior*/
+    margin: auto;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    width: 100%;
     z-index: 1000; /* Garante que o menu fique acima de outros elementos */
     gap: 100px; /* Espaço entre as opções do menu */
     background-color: #46425e; 
@@ -60,7 +116,13 @@ body {
 .opcao {
     color:#fff6d3;
     text-decoration: none; /* Remove sublinhado */
-    font-size: 18px;  
+    font-size: 18px; 
+    transition: 0.5s; 
+}
+
+.opcao:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px #6a406f;
 }
 
 .container { /* centraliza o conteúdo da página */

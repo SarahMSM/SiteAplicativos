@@ -5,46 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicologia Behaviorista</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <nav> Menu 
+    <audio id="som" src="./sounds/mouse-hover.mp3" preload="auto"></audio> <!--o som para fazer *plim* *plim* *plim* quando passar o mouse por cima-->
+    <nav> 
+        <div class="caixa-main" draggable="true">
         <ul class="lista_limpa"> <!-- classe para retirar as bolinhas da lista -->
             <li> <a class ="menu_btn" href="introducao.html"> <!--classe p/ ajuste do botão no CSS-->
-                    <img src = "imagens/reze_btn.jpg"> 
+                    <img src = "imagens/reze_btn.jpg" class="opcao-imagem"> 
                     <h3> Introdução ao <br/> Behaviorismo </h3> 
                 </a>
             </li>
             <li> <a class ="menu_btn" href="condicpavlov.html" target="_self"> 
                     <!-- o target="_self" faz abrir na mesma janela -->
-                    <img src = "imagens/denji_btn.jpg">
+                    <img src = "imagens/denji_btn.jpg" class="opcao-imagem">
                     <h3> Condicionamento <br/> Clássico </h3>
                 </a>  
             </li>
             <li> <a class ="menu_btn" href="condicskinner.html" target="_self"> 
-                    <img src = "imagens/makima_btn.jpg">
+                    <img src = "imagens/makima_btn.jpg" class="opcao-imagem">
                     <h3> Condicionamento <br/> Operante </h3> 
                 </a> 
         
             </li>
             <li> 
                 <a class ="menu_btn" href="exemplos.html" target="_self"> 
-                    <img src = "imagens/power_btn.jpg"> 
+                    <img src = "imagens/power_btn.jpg" class="opcao-imagem"> 
                     <h3> Exemplos no Dia a Dia </h3> 
                 </a> <!-- Rato --> 
             </li>
             <li> 
                 <a class ="menu_btn" href="fontes.html" target="_self"> 
-                    <img src = "imagens/aki_btn.jpg">
+                    <img src = "imagens/aki_btn.jpg" class="opcao-imagem">
                     <h3> Fontes </h3> 
                 </a> 
             </li> 
             <li> 
                 <a class ="menu_btn" href="sobre.html" target="_self"> 
-                    <img src = "imagens/pochita_btn.jpg">
+                    <img src = "imagens/pochita_btn.jpg" class="opcao-imagem">
                     <h3> Sobre Nós </h3>  
                 </a> 
             </li>
         </ul>
+    </div>
     </nav>
+    <script src="./script.js"></script> <!--adicionei o javascript no final para não bugar e ele rodar antes de carregar os arquivos-->
 </body>
 </html>
