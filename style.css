@@ -7,12 +7,64 @@
     font-family: 'Ubuntu';
     src: url(./fonts/ubuntu/Ubuntu-Regular.ttf) format('truetype');
 }
-p {
+
+* { /* ajustes padrão */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto; 
+    width: 70vw; /* o corpo do texto ocupa 70% da largura da janela */
+    height: 100%;
+    display: flex; /* ativa o modelo de layout flexível */
+    flex-direction: column; /* organiza os elementos em uma coluna */
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(215, 216, 252);
+    padding-top: 10%; /* espaçamento interno do topo */
+    img { margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 40vw;}
+} 
+
+p { /* ajusta todos os parágrafos do site */
     color: #fff6d3;
     font-family: 'Ubuntu';
 }
 
-.caixa-main{ /*opcoes do index*/
+
+h3 { /* ajusta todos os títulos h3 do site */
+    color: #eb6b6f;
+    font-size: 40px;
+    font-family: 'Ubuntu';
+    text-shadow: #8a5490 0px 0px 10px ;
+}
+h4, h5 { /* ajusta todos os títulos h4 e h5 do site */
+    color: #eb6b6f;
+    font-size: auto;
+    font-family: 'Ubuntu';
+}
+ol, ul, table { /* ajusta todas as listas e tabelas do site */
+    color: #fff6d3;
+    font-size: auto;
+    font-family: 'Ubuntu';
+}
+
+figcaption{ /* ajusta as legendas das imagens */
+    color: #ffb0a3;
+    font-size: auto;
+    font-family: 'Ubuntu';
+}
+
+.titulo-index{ /* ajusta apenas o título do index */
+    font-size: 19px;
+    color:#fff6d3;
+}
+
+.caixa-main{ /*opções do index*/
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -31,13 +83,13 @@ p {
     width: 1000px; /* Largura da caixa */
     box-shadow: 5px 5px 20px #808080;
 }
-.layout {
+.layout { /* organiza o corpo do texto de um lado e as tirinhas do outro */
     margin: auto;
     display: flex;
     align-items: flex-start;
     gap: 40px;
 }
-.exemplo {
+.exemplo { /* organiza as imagens e as legendas */
     margin-left: 20px;
     display: block;
     flex-direction: column;
@@ -52,49 +104,37 @@ p {
     flex-direction: column;
     margin-top: 400vh;
 }
+
 .imagens-exemplo{
-    display: grid;
-    grid-template-columns: repeat(2, 180px);
+    display: grid; /* transforma o div em uma grade */
+    grid-template-columns: repeat(2, 180px); /* define 2 colunas de 180px cada, para as imagens 
+    ficarem uma do lado da outra */
     gap: 10px;
 }
+
 .legendas-exemplo {
     gap: 20px;
-    display: flex;
-    align-items: center;
+    display: grid; /* transforma o div em uma grade */
+    grid-template-columns: repeat(2, 180px); /* define 2 colunas de 180px cada, para as legendas 
+    ficarem uma do lado da outra */
+    align-items: center; /* alinha os itens verticalmente */
     justify-content: center;
     width: 100%;
     margin-top: 10px;
-    margin-right: 200px;
+    margin-left: 40px; /* ajusta as legendas para ficarem centralizadas com os cachorros */
     margin-bottom: 200px;
 }
+
+.legendas-exemplo h4{ /* muda só os títulos das legendas */
+    color: #46425e;
+    font-size: 20px;
+}
+
 .exemplo img{
     width: 100%;
 }
-.titulo-index{
-    font-size: 19px;
-    color:#fff6d3;
-}
-h3 {
-    color: #eb6b6f;
-    font-size: 40px;
-    font-family: 'Ubuntu';
-    text-shadow: #8a5490 0px 0px 10px ;
-}
-h4, h5 {
-    color: #eb6b6f;
-    font-size: auto;
-    font-family: 'Ubuntu';
-}
-ol, ul, table {
-    color: #fff6d3;
-    font-size: auto;
-    font-family: 'Ubuntu';
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
 .corpo_padrao {
     padding-top: 18%;
     padding-bottom: 15%;
@@ -107,22 +147,6 @@ ol, ul, table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
-
-body {
-    margin: auto;
-    width: 70vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(215, 216, 252);
-    padding-top: 10%;
-    img { margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 40vw;}
 } 
 
 .menu_btn {
@@ -169,7 +193,7 @@ body {
     right: 0;
     width: 100%;
     z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-    gap: 100px; /* Espaço entre as opções do menu */
+    gap: 80px; /* Espaço entre as opções do menu */
     background-color: #46425e; 
     padding: 10px 20px; /* Espaçamento interno do menu */
     width: 80%;
