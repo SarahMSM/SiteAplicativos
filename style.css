@@ -43,6 +43,22 @@ body {
     justify-content: center;
     align-items: center;
 } 
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin-left: -1350px;
+    margin-bottom: 1500px;
+    margin-top: -170px;
+}
+.logo img{
+    width: 30px;
+    height: 30px;
+}
+
+.logo figcaption {
+    color: #150d43;
+    font-size: 10px;
+}
 
 p { /* ajusta todos os parágrafos do site */
     color: #fff6d3;
@@ -51,7 +67,7 @@ p { /* ajusta todos os parágrafos do site */
 
 h1 {
     color: #eb6b6f;
-    margin-top: -80px;
+    margin-top: -70px;
     font-size: 80px;
     font-family: 'Ubuntu';
     text-shadow: #8a5490 0px 0px 10px ;
