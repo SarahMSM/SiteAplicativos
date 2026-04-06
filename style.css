@@ -49,6 +49,13 @@ p { /* ajusta todos os parágrafos do site */
     font-family: 'Ubuntu';
 }
 
+h1 {
+    color: #eb6b6f;
+    margin-top: -80px;
+    font-size: 80px;
+    font-family: 'Ubuntu';
+    text-shadow: #8a5490 0px 0px 10px ;
+}
 
 h3 { /* ajusta todos os títulos h3 do site */
     color: #eb6b6f;
