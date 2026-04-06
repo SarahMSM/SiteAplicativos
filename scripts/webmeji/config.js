@@ -17,7 +17,7 @@
 // if two of them overlap and pet and dragging interactions happen, only the one stated here last will get interacted with
 window.SPAWNING = [
   { id: 'webmeji-0', config: 'SHIMEJI_CONFIG' },
-  /*{ id: 'webmeji-1', config: 'MIKU_CONFIG' }*/
+  /*{ id: 'webmeji-1', config: 'MIKU_CONFIG' } (comentado caso não dê tempo de adicionar a Makima)*/
 ];
 
 // base shimeji config ----------------------------------------------
