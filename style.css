@@ -234,3 +234,10 @@ figcaption{ /* ajusta as legendas das imagens */
     font-family: Cascadia-Code;
     text-decoration: none;
 }
+
+.sino {
+    transition: 0.5s ease-in-out;
+}
+.sino:hover {
+    transform: rotate(90deg);
+}
