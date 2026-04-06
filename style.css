@@ -30,6 +30,20 @@ body {
         width: 40vw;}
 } 
 
+.corpo_padrao {
+    padding-top: 18%;
+    padding-bottom: 15%;
+    background-image: linear-gradient(to bottom, rgb(215, 216, 252), #7c3f58);
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
 p { /* ajusta todos os parágrafos do site */
     color: #fff6d3;
     font-family: 'Ubuntu';
@@ -135,19 +149,6 @@ figcaption{ /* ajusta as legendas das imagens */
 }
 
 
-.corpo_padrao {
-    padding-top: 18%;
-    padding-bottom: 15%;
-    background-image: linear-gradient(to bottom, rgb(215, 216, 252), #7c3f58);
-    background-repeat: no-repeat;
-    margin: auto;
-    width: 70vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} 
 
 .menu_btn {
     text-decoration: none; /* Remove sublinhado */
@@ -187,12 +188,11 @@ figcaption{ /* ajusta as legendas das imagens */
     border-radius: 0px 0px 10px 10px; /*borda arredondada somente no campo inferior*/
     margin: auto;
     display: flex;
-    position: fixed;
+    position: fixed; /* Garante que o menu fique no topo*/
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    z-index: 1000; /* Garante que o menu sobreponha outros elementos */
     gap: 80px; /* Espaço entre as opções do menu */
     background-color: #46425e; 
     padding: 10px 20px; /* Espaçamento interno do menu */
